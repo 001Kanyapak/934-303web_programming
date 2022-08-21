@@ -1,0 +1,15 @@
+.course {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid blue;
+    float: left;
+    margin-right: 10px;
+}
+
+.clear{
+    clear:both;
+}
+
+.container {
+    background-color: antiquewhite;
+}
