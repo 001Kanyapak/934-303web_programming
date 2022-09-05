@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let count = 0;
+        function counter () {
+            count++;
+            document.querySelector("h1").innerHTML = count;
+            document.querySelector("h1").style.color = "green";
+        }
+        document.addEventListener("DOMContentLoaded",function() {
+            document.querySelector("#counterBtn").onclick = counter;
+        });
+
+        function cencle () {
+            cencle = 0;
+            document.querySelector("h1").innerHTML = cencle;
+            document.querySelector("h1").style.color = "red";
+        }
+        document.addEventListener("DOMContentLoaded",function() {
+            document.querySelector("#cencleBtn").onclick = cencle;
+        });
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+    <button id="counterBtn"> Count </button>
+    <button id="cencleBtn"> Cencle </button>
+</body>
+</html>
